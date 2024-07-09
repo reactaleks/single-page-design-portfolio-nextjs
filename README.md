@@ -8,4 +8,5 @@ Can use any tools you like to help you complete the challenge. So if you've got 
 
 - NextJS
 - TailwindCSS
+- Embla Carousel
 - TypeScript
