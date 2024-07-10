@@ -35,40 +35,48 @@ export default function PortfolioComponent() {
   }, [emblaApi]);
 
   return (
-    <div className={` max-w-[48rem] flex flex-col justify-center`}>
-      <div className={` overflow-hidden `} ref={emblaRef}>
-        <div className={`${styles.embla__container} flex items-center`}>
-          {portfolioImages.map((slide, index) => (
-            <div key={index} className="shrink-0 grow-0 basis-[100%] ">
-              <div className="flex ">
-                <Image
-                  src={slide}
-                  className="w-[540px]"
-                  alt=""
-                  width={540}
-                  height={360}
-                />
+    <div className="h-[338px] flex flex-col justify-between mt-16">
+      <h2 className="text-[24px] font-bold text-center font-jakarta">My Work</h2>
+      <div className={` max-w-[48rem] flex flex-col justify-center`}>
+        <div className={` overflow-hidden `} ref={emblaRef}>
+          <div className={`${styles.embla__container} flex items-center`}>
+            {portfolioImages.map((slide, index) => (
+              <div key={index} className="shrink-0 grow-0 basis-[75%] ">
+                <div className="flex ">
+                  <Image
+                    src={slide}
+                    className="w-[270px] rounded-xl"
+                    alt=""
+                    width={270}
+                    height={180}
+                  />
+                </div>
               </div>
+            ))}
+          </div>
+        </div>
+        
+      </div>
+      <div className={`w-[144px] h-[64px] mx-auto`}>
+          <div className={`flex justify-between w-full  h-[64px]`}>
+            <div className="w-[64px] h-[64px] bg-black rounded-full flex items-center justify-center"    onClick={onPrevButtonClick}>
+              <Image
+                src={slideControlLeft}
+                className={`w-[14.81px] h-[16px]`}
+                alt=""
+             
+              />
             </div>
-          ))}
+            <div className="w-[64px] h-[64px] bg-black rounded-full flex items-center justify-center" onClick={onNextButtonClick}>
+              <Image
+                src={slideControlRight}
+                className={`w-[14.81px] h-[16px]`}
+                alt=""
+                
+              />
+            </div>
+          </div>
         </div>
-      </div>
-      <div className={``}>
-        <div className={`flex justify-center w-full  h-[64px]`}>
-          <Image
-            src={slideControlLeft}
-            className={`w-[64px] h-[64px] bg-black rounded-full  `}
-            alt=""
-            onClick={onPrevButtonClick}
-          />
-          <Image
-            src={slideControlRight}
-            className={`w-[64px] h-[64px] bg-black rounded-full  `}
-            alt=""
-            onClick={onNextButtonClick}
-          />
-        </div>
-      </div>
     </div>
   );
 }
