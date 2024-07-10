@@ -1,0 +1,9 @@
+  .embla__container {
+    backface-visibility: visible;
+    touch-action: pan-y pinch-zoom;
+  }
+
+
+
+
+  
