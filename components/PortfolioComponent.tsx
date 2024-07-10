@@ -37,15 +37,15 @@ export default function PortfolioComponent() {
   return (
     <div className="h-[338px] flex flex-col justify-between mt-16 md:h-[576px] md:mt-28 xl:h-[576px] xl:w-full ">
       <h2 className="text-[24px] font-bold text-center font-jakarta md:text-heading-s">My Work</h2>
-      <div className={` max-w-[48rem] flex flex-col justify-center xl:max-w-full`}>
+      <div className={` max-w-[48rem] flex flex-col justify-center lg:max-w-full 4k:max-w-[1110px] 4k:mx-auto`}>
         <div className={` overflow-hidden `} ref={emblaRef}>
           <div className={`${styles.embla__container} flex items-center`}>
             {portfolioImages.map((slide, index) => (
-              <div key={index} className="shrink-0 grow-0 basis-[75%] xl:basis-[40%]">
+              <div key={index} className="shrink-0 grow-0 basis-[75%] lg:basis-[40%] xl:basis-[40%] 2xl:basis-[25%] 4k:basis-[30%]">
                 <div className="flex ">
                   <Image
                     src={slide}
-                    className="w-[270px] rounded-xl md:w-[540px]"
+                    className="w-[270px] rounded-xl md:w-[540px] mr-2"
                     alt=""
                     width={270}
                     height={180}
@@ -59,7 +59,7 @@ export default function PortfolioComponent() {
       </div>
       <div className={`w-[144px] h-[64px] mx-auto`}>
           <div className={`flex justify-between w-full  h-[64px]`}>
-            <div className="w-[64px] h-[64px] bg-black rounded-full flex items-center justify-center"    onClick={onPrevButtonClick}>
+            <div className="w-[64px] h-[64px] bg-black rounded-full flex items-center justify-center hover:bg-galactic-blue"    onClick={onPrevButtonClick}>
               <Image
                 src={slideControlLeft}
                 className={`w-[14.81px] h-[16px]`}
@@ -67,7 +67,7 @@ export default function PortfolioComponent() {
              
               />
             </div>
-            <div className="w-[64px] h-[64px] bg-black rounded-full flex items-center justify-center" onClick={onNextButtonClick}>
+            <div className="w-[64px] h-[64px] bg-black rounded-full flex items-center justify-center hover:bg-galactic-blue" onClick={onNextButtonClick}>
               <Image
                 src={slideControlRight}
                 className={`w-[14.81px] h-[16px]`}
