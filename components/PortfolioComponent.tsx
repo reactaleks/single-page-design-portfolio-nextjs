@@ -35,8 +35,8 @@ export default function PortfolioComponent() {
   }, [emblaApi]);
 
   return (
-    <div className="h-[338px] flex flex-col justify-between mt-16">
-      <h2 className="text-[24px] font-bold text-center font-jakarta">My Work</h2>
+    <div className="h-[338px] flex flex-col justify-between mt-16 md:h-[576px] md:mt-28">
+      <h2 className="text-[24px] font-bold text-center font-jakarta md:text-heading-s">My Work</h2>
       <div className={` max-w-[48rem] flex flex-col justify-center`}>
         <div className={` overflow-hidden `} ref={emblaRef}>
           <div className={`${styles.embla__container} flex items-center`}>
@@ -45,7 +45,7 @@ export default function PortfolioComponent() {
                 <div className="flex ">
                   <Image
                     src={slide}
-                    className="w-[270px] rounded-xl"
+                    className="w-[270px] rounded-xl md:w-[540px]"
                     alt=""
                     width={270}
                     height={180}
