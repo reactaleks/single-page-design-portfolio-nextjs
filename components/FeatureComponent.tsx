@@ -17,6 +17,7 @@ export default function FeatureComponent({ bgPattern, bgColour, size, iconSize, 
             ${size}
             flex flex-col justify-around
             rounded-xl
+            mt-6
             `}
     >
       <div className="grid grid-cols-2">
@@ -26,7 +27,7 @@ export default function FeatureComponent({ bgPattern, bgColour, size, iconSize, 
         </div>
       </div>
       <div className="flex text-light-cream justify-start ml-6">
-        <h3 className="text-heading-s font-jakarta">{title}</h3>
+        <h3 className="text-heading-s font-jakarta font-bold">{title}</h3>
       </div>
     </div>
   );

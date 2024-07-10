@@ -8,14 +8,18 @@ interface Props {
 export default function NavigationComponent({navType}:Props) {
     if(navType === 'nav') {
         return (
-            <nav className="flex justify-between">
+            <nav className="flex justify-between w-[343px] h-[48px] mx-auto mt-6 mb-8
+            md:w-[689px] md:h-[64px] xl:w-[1111px] md:items-center
+            ">
                 <LogoComponent/>
                 <ButtonComponent buttonType="dark"/>
             </nav>
         )
     } else {
         return (
-            <footer className="flex justify-between">
+            <footer className="flex justify-between w-[343px] h-[48px] mx-auto mt-8 mb-6
+            md:w-[689px] md:h-[64px] xl:w-[1111px] md:items-center
+            ">
                 <LogoComponent/>
                 <ButtonComponent buttonType="dark"/>
             </footer>
