@@ -52,7 +52,7 @@ export default function CallToActionComponent({ actionType }: Props) {
               </h2>
             </div>
 
-            <div className="w-[295px] h-[130px] mx-auto md:mt-8 md:w-[540px] md:h-[84px]] xl:mt-8">
+            <div className="w-[295px] h-[130px] mx-auto md:mt-8 md:w-[540px] md:h-[84px] xl:mt-8">
               <p className="text-light-cream leading-main font-jakarta text-[16px] md:text-main">
                 I’d love to have a chat to see how I can help you. The best
                 first step is for us to discuss your project during a free
