@@ -18,10 +18,12 @@ export default function PortfolioComponent() {
   ];
 
   const [emblaRef, emblaApi] = useEmblaCarousel({
-    align: "start",
+    align: "center",
     loop: true,
     skipSnaps: false,
-    inViewThreshold: 0.4,
+    duration: 15,
+    inViewThreshold: 0.7,
+    startIndex: 3
   });
 
   const onPrevButtonClick = useCallback(() => {
@@ -37,15 +39,15 @@ export default function PortfolioComponent() {
   return (
     <div className="h-[338px] flex flex-col justify-between mt-16 md:h-[576px] md:mt-28 xl:h-[576px] xl:w-full ">
       <h2 className="text-[24px] font-bold text-center font-jakarta md:text-heading-s">My Work</h2>
-      <div className={` max-w-[48rem] flex flex-col justify-center lg:max-w-full 4k:max-w-[1110px] 4k:mx-auto`}>
+      <div className={` max-w-[48rem] flex flex-col lg:max-w-full 4k:max-w-[1110px] 4k:mx-auto`}>
         <div className={` overflow-hidden `} ref={emblaRef}>
-          <div className={`${styles.embla__container} flex items-center`}>
+          <div className={`${styles.embla__container} flex`}>
             {portfolioImages.map((slide, index) => (
-              <div key={index} className="shrink-0 grow-0 basis-[75%] lg:basis-[40%] xl:basis-[40%] 2xl:basis-[25%] 4k:basis-[30%]">
-                <div className="flex ">
+              <div key={index} className="shrink-0 grow-0 basis-[70%] md:basis-[540px] lg:basis-[40%] xl:basis-[40%] 2xl:basis-[25%] 4k:basis-[50%]">
+                <div className=" p-2 flex justify-center">
                   <Image
                     src={slide}
-                    className="w-[270px] rounded-xl md:w-[540px] mr-2"
+                    className="w-[270px] h-[180px] rounded-xl md:w-[540px] md:h-[360px]"
                     alt=""
                     width={270}
                     height={180}

@@ -9,7 +9,7 @@ import bgPatternMotionGraphics from "../public/assets/pattern-motion-graphics.sv
 export default function FeaturesSectionComponent() {
   return (
     <div className="flex flex-col md:w-[690px] md:h-[570px] md:mx-auto md:mt-6 xl:w-[1111px] xl:h-[364px]">
-      <div className="md:grid md:grid-cols-2 md:gap-4 xl:grid-cols-3">
+      <div className="md:grid md:grid-cols-2 md:gap-x-2 xl:grid-cols-3 xl:gap-10">
         <FeatureComponent
           bgPattern={bgPatternGraphicDesign}
           bgColour="bg-galactic-blue"
@@ -17,7 +17,7 @@ export default function FeaturesSectionComponent() {
           iconSize="w-[128px] h-[192px]"
           title="Graphic Design"
         />
-        <div className="grid grid-cols-2 md:gap-x-4">
+        <div className="grid grid-cols-2 gap-x-6 md:gap-x-1 xl:gap-x-10 2xl:gap-x-10 w-[343px] mx-auto">
           <FeatureComponent
             bgPattern={bgPatterUiuxDesign}
             bgColour="bg-summer-yellow"
@@ -32,18 +32,18 @@ export default function FeaturesSectionComponent() {
             iconSize="w-[64px] h-[64px]"
             title="Apps"
           />
-          <div className="justify-center">
+          <div className="justify-center w-[343px] ">
             <FeatureComponent
               bgPattern={bgPatternIllustrations}
               bgColour="bg-light-red"
-              size="w-[343px] h-[158px] md:w-[333px] md:h-[158px] ml-4 md:ml-[3px] xl:w-[354px] xl:h-[158px]"
+              size="w-[343px] h-[158px] md:w-[333px] md:h-[158px] md:ml-1 xl:w-[354px] xl:h-[158px] xl:ml-0"
               iconSize="w-[128px] h-[64px]"
               title="Illustrations"
             />
           </div>
         </div>
 
-        <div className="md:grid md:grid-cols-2 md:grid-rows-1 md:w-[690px] md:gap-4 xl:w-auto xl:grid-cols-1 xl:gap-0 ">
+        <div className="md:grid md:grid-cols-2 md:grid-rows-1 md:w-[690px] md:gap-2 xl:w-auto xl:grid-cols-1 xl:gap-0 ">
           <FeatureComponent
             bgPattern={bgPatternPhotography}
             bgColour="bg-cyan"

@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <div className="flex flex-col justify-around">
       <NavigationComponent navType="nav"/>
-      <main className="flex min-h-screen flex-col justify-between">
+      <main className="flex min-h-screen flex-col justify-between 4k:justify-evenly">
         <HeroComponent/>
         <FeaturesSectionComponent/>
         <CallToActionComponent actionType="withImage"/>
