@@ -36,6 +36,9 @@ const config: Config = {
       },
       fontFamily: {
         "jakarta": "Jakarta"
+      },
+      screens: {
+        '4k': '2560px'
       }
     },
   },

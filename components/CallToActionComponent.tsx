@@ -24,7 +24,7 @@ export default function CallToActionComponent({ actionType }: Props) {
         </div>
         <div className="w-[343px] h-[362px] flex flex-col justify-around md:text-start md:w-[339px] md:h-[364px] md:justify-between xl:w-[540px] xl:h-[306px]">
           <div className="w-[343px] h-[66px] xl:w-[540px]">
-            <h2 className="text-[26px] font-jakarta font-bold md:text-heading-s md:leading-heading-s">
+            <h2 className="text-[26px] font-jakarta font-bold md:text-heading-s md:leading-heading-s xl:text-heading-m xl:leading-heading-m">
               I’m Amy, and I’d love to work on your next project
             </h2>
           </div>
@@ -47,7 +47,7 @@ export default function CallToActionComponent({ actionType }: Props) {
         <div className="w-[295px] h-[255px] flex flex-col xl:flex-row justify-between mx-auto text-center md:w-[540px] md:h-[232px] xl:w-[1110px]">
           <div className="flex flex-col xl:w-[700px] xl:h-[159px] xl:text-start xl:my-auto">
             <div>
-              <h2 className=" text-light-cream font-jakarta w-[240px] h-[33px] text-[26px] font-bold mx-auto md:text-heading-s md:w-[540px]">
+              <h2 className=" text-light-cream font-jakarta w-[240px] h-[33px] text-[26px] font-bold mx-auto md:text-heading-s md:w-[540px]  xl:text-heading-m xl:leading-heading-m">
                 Book a call with me
               </h2>
             </div>
